@@ -1,1 +1,13 @@
-Lines ans subscribe
+Make a simple APi 
+
+make a server
+crate header and api body.
+crate an api with statich data .
+put data in another file.
+
+
+
+we will import http module
+
+Interview question:-
+200, 201, 202, 500, 501, 400
