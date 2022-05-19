@@ -1,16 +1,26 @@
 const fs = require("fs");
-
-// fs.writeFileSync("apple.txt", 'this is the apple file');
-
 const path = require("path");
-const dirPath = path.join(__dirname, "files");
-// console.warn(dirPath);
-// for (let i = 0; i < 5; i++) {
-//   fs.writeFileSync(`${dirPath}/apple${i}.txt`, "a simple tet file");
-// }
+const dirPath = path.join(__dirname, "crud");
+const filePath = `${dirPath}/file.txt`;
 
-fs.readdir(dirPath, (error, files) => {
-  files.forEach((file) => {
-    console.log("File name is",file);
-  });
-});
+// fs.writeFileSync(filePath, 'This is a simple text file');
+
+// fs.readFile(filePath, "utf8", (error, file) => {
+//   console.log(file);
+// });
+
+// fs.appendFile(filePath, " add new texxt in file to check append", (error) => {
+//   if (!error) {
+//     console.log("File is append");
+//   }
+// });
+
+const newFilePath = `${dirPath}/new.txt`;
+
+// fs.rename(filePath, newFilePath,(error)=>{
+//     if(!error){
+//         console.log("file name ")
+//     }
+// })
+
+fs.unlinkSync(newFilePath);

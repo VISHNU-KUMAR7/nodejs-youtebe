@@ -1,11 +1,13 @@
-Show file list with file system
+CRUD with File System 
 
-make files in a folder 
-use path module
-get file names and print
+MAke file.
+Read File.
+Update File.
+Rename File.
+Delete File.
 
 
-Interview question
+Interview Question:-
 
-
-We can't take the data from the other drive 
+what is buffer
+:- Tempory memory 
