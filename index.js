@@ -3,14 +3,16 @@ const express = require("express");
 
 const app = express();
 app.get("", (request, response) => {
-  response.send("<h1>hello this is Home page</h1>");
+  response.send(
+    `<h1>hello this is Home page</h1><a href="/about" > go to about page </a>`
+  );
 });
 
 app.get("/about", (request, response) => {
-  //   response.send("Hello this is About Page");
   response.send(
-    `<input type='text' placeholder="user Name" />
-      <button> Click me</button>`
+    `<input type='text' placeholder="user Name" value = "${request.query.name}"/>
+      <button> Click me</button>
+      <a href="/" > Go to home page </a>`
   );
 });
 
