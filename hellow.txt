@@ -1,16 +1,1 @@
-Asynchronous Basic in Node js
-
-Theory part:-
-    function (users, products, cities)
-    ---------users---------
-                           ----------products----------
-                                                        -------cities--------
-    (wait till the program is done)
-
--------users--------
-       ----------products----------
-                      ------cities----
-    (no wait )
-
-
-what is roleback? 
+Hangle Asynchronous Data in node js
