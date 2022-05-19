@@ -1,1 +1,14 @@
-Hangle Asynchronous Data in node js
+How Node js Works
+
+Call Stack
+NOde API
+CallBack Queue
+Example 
+
+Interview Question
+
+                 (C/C++)   
+Call Stack ---> Node APIs ---> Callback Queue
+    ^                                |    
+    |                                |
+     ---------------------------------

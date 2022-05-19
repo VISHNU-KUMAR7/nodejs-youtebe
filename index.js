@@ -1,19 +1,14 @@
-const { rejects } = require("assert");
-const { resolve } = require("path");
+console.log("trting up")
 
-let a = 10;
-let b = 0;
+setTimeout(()=>{
+    console.log("2 second log")
+},2000)
 
-let waitingData = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(20);
-  }, 2000);
-});
 
-waitingData.then((data) => {
-  console.log(a + data);
-});
+setTimeout(()=>{
+    console.log("0 second log")
+},0)
 
-// console.log(a + b); // 10
 
-// how to get output 30 i.e 10 + 20
+console.log("filining up")
+
