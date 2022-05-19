@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-yoteube",
+  "version": "1.0.0",
+  "description": "a node js tutuorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VISHNU-KUMAR7/nodejs-youtebe.git"
+  },
+  "keywords": [
+    "code",
+    "step",
+    "by",
+    "step"
+  ],
+  "author": "Vishnu Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VISHNU-KUMAR7/nodejs-youtebe/issues"
+  },
+  "homepage": "https://github.com/VISHNU-KUMAR7/nodejs-youtebe#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.16",
+    "simple-node-logger": "^21.8.12"
+  }
+}
