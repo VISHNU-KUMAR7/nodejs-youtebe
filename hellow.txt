@@ -1,7 +1,11 @@
-Input from command line
+Show file list with file system
 
-set input from command line
-crate file with input
-delete the file with input
+make files in a folder 
+use path module
+get file names and print
 
 
+Interview question
+
+
+We can't take the data from the other drive 

@@ -1,25 +1,16 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const input = process.argv;
-// fs.writeFileSync(input[2],input[3])
+// fs.writeFileSync("apple.txt", 'this is the apple file');
 
-if(input[2] == 'add'){
-    fs.writeFileSync(input[3],input[4])
-}
-else if(input[2] == 'remove'){
-    fs.unlinkSync(input[3]);
-}
-else{
-    console.log("invalid input");
-}
+const path = require("path");
+const dirPath = path.join(__dirname, "files");
+// console.warn(dirPath);
+// for (let i = 0; i < 5; i++) {
+//   fs.writeFileSync(`${dirPath}/apple${i}.txt`, "a simple tet file");
+// }
 
-// Command
-// node index.js hello hi
-
-// node index.js add orange.txt `this is color and fruit`
-
-// node index.js remove orange.txt
-
-// node index.js remove orange.txt
-
-// node index.js remove apple.txt 
+fs.readdir(dirPath, (error, files) => {
+  files.forEach((file) => {
+    console.log("File name is",file);
+  });
+});
