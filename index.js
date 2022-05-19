@@ -1,3 +1,4 @@
+const { resolvePtr } = require("dns");
 const { response } = require("express");
 const express = require("express");
 const path = require("path");
@@ -19,9 +20,14 @@ app.get("/profile", (_, response) => {
   const data = {
     name: "vishnu Kumar",
     email: "test@test.com",
-    mobileNo: "341234245"
-  }
-  response.render("profile.ejs",{data});
+    mobileNo: "341234245",
+    skills: ["php", "sql", "react", "docker"],
+  };
+  response.render("profile.ejs", { data });
+});
+
+app.get("/login", (_, response) => {
+  response.render("login");
 });
 
 app.get("/helpme", (_, response) => {
