@@ -1,26 +1,13 @@
-const fs = require("fs");
-const path = require("path");
-const dirPath = path.join(__dirname, "crud");
-const filePath = `${dirPath}/file.txt`;
+// console.log("start exe...");
 
-// fs.writeFileSync(filePath, 'This is a simple text file');
+let a = 10;
+let b = 0;
 
-// fs.readFile(filePath, "utf8", (error, file) => {
-//   console.log(file);
-// });
+// console.log("logic exe....");
+setTimeout(() => {
+  //   console.log("logic exe...");
+  b = 20;
+}, 2000);
 
-// fs.appendFile(filePath, " add new texxt in file to check append", (error) => {
-//   if (!error) {
-//     console.log("File is append");
-//   }
-// });
-
-const newFilePath = `${dirPath}/new.txt`;
-
-// fs.rename(filePath, newFilePath,(error)=>{
-//     if(!error){
-//         console.log("file name ")
-//     }
-// })
-
-fs.unlinkSync(newFilePath);
+// console.log("complete exe....");
+console.log(a + b);
