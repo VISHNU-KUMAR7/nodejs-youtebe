@@ -1,41 +1,26 @@
-const { resolvePtr } = require("dns");
 const { response } = require("express");
 const express = require("express");
-const path = require("path");
-
+const { resolve } = require("path");
 const app = express();
-const publicPath = path.join(__dirname, "public");
 
-app.set("view engine", "ejs");
+const reqFilter = (request, response, next) => {
+  if (!request.query.age) {
+    response.send("Please provide age");
+  } else if (request.query.age <= 18) {
+    response.send("Your are not elegible to welcome this page");
+  } else {
+    next();
+  }
+};
 
-app.get("", (_, response) => {
-  response.sendFile(`${publicPath}/index.html`);
+app.use(reqFilter);
+
+app.get("/", (request, response) => {
+  response.send("Welcome to Home page ");
 });
 
-app.get("/about", (_, response) => {
-  response.sendFile(`${publicPath}/home.html`);
-});
-
-app.get("/profile", (_, response) => {
-  const data = {
-    name: "vishnu Kumar",
-    email: "test@test.com",
-    mobileNo: "341234245",
-    skills: ["php", "sql", "react", "docker"],
-  };
-  response.render("profile.ejs", { data });
-});
-
-app.get("/login", (_, response) => {
-  response.render("login");
-});
-
-app.get("/helpme", (_, response) => {
-  response.sendFile(`${publicPath}/help.html`);
-});
-
-app.get("*", (_, response) => {
-  response.sendFile(`${publicPath}/pagenotfound.html`);
+app.get("/user", (request, response) => {
+  response.send("Welcome to User page");
 });
 
 app.listen(5000);
