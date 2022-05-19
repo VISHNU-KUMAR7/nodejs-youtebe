@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const publicPath = path.join(__dirname, "public");
 
-// app.use(express.static(publicPath));
+app.set("view engine", "ejs");
 
 app.get("", (_, response) => {
   response.sendFile(`${publicPath}/index.html`);
@@ -13,6 +13,15 @@ app.get("", (_, response) => {
 
 app.get("/about", (_, response) => {
   response.sendFile(`${publicPath}/home.html`);
+});
+
+app.get("/profile", (_, response) => {
+  const data = {
+    name: "vishnu Kumar",
+    email: "test@test.com",
+    mobileNo: "341234245"
+  }
+  response.render("profile.ejs",{data});
 });
 
 app.get("/helpme", (_, response) => {
