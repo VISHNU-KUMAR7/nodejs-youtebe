@@ -1,13 +1,7 @@
-Make a simple APi 
+Input from command line
 
-make a server
-crate header and api body.
-crate an api with statich data .
-put data in another file.
-
+set input from command line
+crate file with input
+delete the file with input
 
 
-we will import http module
-
-Interview question:-
-200, 201, 202, 500, 501, 400
