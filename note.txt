@@ -1,7 +1,11 @@
-        Delete Data in MongoDB
-Make New file for Delete Data
+                Api with MongoDB
 
-Import MongoDB connection
-Delete single and multiple records
+Make New file for Api
+Import and user mongo config
+make API for get Data
+test with POstman
+
+API method(4 ) -> PUT, GET, POST, DELETE
 
 Interview Question
+
