@@ -1,28 +1,13 @@
-const { response } = require("express");
-const express = require("express");
-const { resolve } = require("path");
-const reqFilter = require("./middleware");
-const app = express();
-const route = express.Router();
+const { MongoClient } = require("mongodb");
+const url = "mongodb://localhost:27017";
+const client = new MongoClient(url);
 
-// app.use(reqFilter);
-route.use(reqFilter);
-app.get("/", (request, response) => {
-  response.send("Welcome to Home page ");
-});
+async function getData() {
+  let result = await client.connect();
+  let db = result.db("e-comm");
+  let collection = db.collection("products");
+  let response = await collection.find({}).toArray();
+  console.log(response);
+}
 
-app.get("/user", (request, response) => {
-  response.send("Welcome to User page");
-});
-
-route.get("/about", (request, response) => {
-  response.send("Welcome to about page");
-});
-
-route.get("/contact", (request, response) => {
-  response.send("Welcome to Contact page");
-});
-
-app.use("/", route);
-
-app.listen(5000);
+getData();

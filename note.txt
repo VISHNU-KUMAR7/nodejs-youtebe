@@ -1,10 +1,8 @@
-Crud Operations in MongoDB
+Connect Node with MongoDB
 
-How to insert data Collection
-How to check inserted data
-How to update data
-how to delete data
+Install MongoDB Package
+Connect MongoDB with Nodejs
+Show data from MongoDB
 
-Interview Question:
-What is CRUD operations?
-Create Read Update Delete
+
+Interview Question
