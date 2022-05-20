@@ -1,8 +1,7 @@
-        Update Data in MongoDB
-Make new file for Update data
+        Delete Data in MongoDB
+Make New file for Delete Data
+
 Import MongoDB connection
-Update single and multiple records
-
-
+Delete single and multiple records
 
 Interview Question
