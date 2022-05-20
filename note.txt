@@ -1,11 +1,9 @@
-                Api with MongoDB
+Node js Post API method
 
-Make New file for Api
-Import and user mongo config
-make API for get Data
-test with POstman
+Make Post Method for API
+Send data from POstman
+Get data in node js by request
+write code for insert data in MongoDB
 
-API method(4 ) -> PUT, GET, POST, DELETE
 
 Interview Question
-
