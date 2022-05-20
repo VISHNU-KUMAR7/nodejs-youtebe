@@ -1,12 +1,10 @@
-        MongoDB Basic
-What is MongoDB
-    MongoDB is a NoSQL database
-    The data stored in a collection
-    collection don't have row and columns
-    data is stored in the form of object.
-MongoDB vs SQL
-    MongoDB is a non-structured 
-    SQL is a structured
-MongoDB Basic commands
+Crud Operations in MongoDB
 
-Interview Question
+How to insert data Collection
+How to check inserted data
+How to update data
+how to delete data
+
+Interview Question:
+What is CRUD operations?
+Create Read Update Delete
