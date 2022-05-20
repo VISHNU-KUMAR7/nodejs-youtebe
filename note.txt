@@ -1,8 +1,12 @@
-            Install MongoDB
-Download MongoDB
-Install MongoDB
-set Environment for MongoDB
-MongoDB compass Tool
-
+        MongoDB Basic
+What is MongoDB
+    MongoDB is a NoSQL database
+    The data stored in a collection
+    collection don't have row and columns
+    data is stored in the form of object.
+MongoDB vs SQL
+    MongoDB is a non-structured 
+    SQL is a structured
+MongoDB Basic commands
 
 Interview Question
