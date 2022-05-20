@@ -1,9 +1,12 @@
-Node js Post API method
 
-Make Post Method for API
-Send data from POstman
-Get data in node js by request
-write code for insert data in MongoDB
+Node js put API method 
+
+Make PUT method fro API
+send data from POstman
+Handle data in node js by request 
+write code for update data in MongoDB
+
+
 
 
 Interview Question
