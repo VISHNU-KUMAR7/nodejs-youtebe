@@ -1,9 +1,8 @@
-            Insert Data from MongoDB
+        Update Data in MongoDB
+Make new file for Update data
+Import MongoDB connection
+Update single and multiple records
 
-Make new file for insert data 
-Import mongodb connection
-Insert single and multiple records
 
 
 Interview Question
-how to insert multiple insert in mongoDB
