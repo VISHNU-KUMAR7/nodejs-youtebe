@@ -1,20 +1,12 @@
 const { response } = require("express");
 const express = require("express");
 const { resolve } = require("path");
+const reqFilter = require("./middleware");
 const app = express();
+const route = express.Router();
 
-const reqFilter = (request, response, next) => {
-  if (!request.query.age) {
-    response.send("Please provide age");
-  } else if (request.query.age <= 18) {
-    response.send("Your are not elegible to welcome this page");
-  } else {
-    next();
-  }
-};
-
-app.use(reqFilter);
-
+// app.use(reqFilter);
+route.use(reqFilter);
 app.get("/", (request, response) => {
   response.send("Welcome to Home page ");
 });
@@ -22,5 +14,15 @@ app.get("/", (request, response) => {
 app.get("/user", (request, response) => {
   response.send("Welcome to User page");
 });
+
+route.get("/about", (request, response) => {
+  response.send("Welcome to about page");
+});
+
+route.get("/contact", (request, response) => {
+  response.send("Welcome to Contact page");
+});
+
+app.use("/", route);
 
 app.listen(5000);
