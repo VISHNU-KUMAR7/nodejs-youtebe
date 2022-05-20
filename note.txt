@@ -1,12 +1,9 @@
+Node Js Delete API method
 
-Node js put API method 
-
-Make PUT method fro API
-send data from POstman
+Make delete method for API
+Send data from POstman
 Handle data in node js by request 
-write code for update data in MongoDB
-
-
-
+write code for delete data in MongoDB
 
 Interview Question
+
