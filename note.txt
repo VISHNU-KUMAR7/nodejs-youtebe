@@ -1,9 +1,9 @@
-REad data from MongoDB
+            Insert Data from MongoDB
 
-REad data from MongoDB
-Make file for db connection
-Handle Promise
+Make new file for insert data 
+Import mongodb connection
+Insert single and multiple records
 
 
-Interview  Question
-
+Interview Question
+how to insert multiple insert in mongoDB
