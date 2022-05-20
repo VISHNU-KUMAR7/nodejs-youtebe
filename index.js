@@ -1,13 +1,19 @@
-const { MongoClient } = require("mongodb");
-const url = "mongodb://localhost:27017";
-const client = new MongoClient(url);
+const dbConnect = require("./mongodb");
+// //1 way to handle dbConnect promise
+// dbConnect().then((response) => {   //return promise
+//   response
+//     .find({})
+//     .toArray()                     //return promise
+//     .then((data) => {
+//       console.log(data);
+//     });
+// });
 
-async function getData() {
-  let result = await client.connect();
-  let db = result.db("e-comm");
-  let collection = db.collection("products");
-  let response = await collection.find({}).toArray();
-  console.log(response);
-}
+//2nd way to handle dbConnect promise
+const main = async () => {
+  let data = await dbConnect();
+  data = await data.find({}).toArray();
+  console.log(data);
+};
 
-getData();
+main();

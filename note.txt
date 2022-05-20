@@ -1,8 +1,9 @@
-Connect Node with MongoDB
+REad data from MongoDB
 
-Install MongoDB Package
-Connect MongoDB with Nodejs
-Show data from MongoDB
+REad data from MongoDB
+Make file for db connection
+Handle Promise
 
 
-Interview Question
+Interview  Question
+
