@@ -1,9 +1,12 @@
-Node Js Delete API method
+Start with Mongoose
 
-Make delete method for API
-Send data from POstman
-Handle data in node js by request 
-write code for delete data in MongoDB
+What is Mongoose
+Difference between Mongooose vs Mongodb package
+
+install Mongoose 
+
+what is schema
+what is model
+
 
 Interview Question
-
