@@ -1,22 +1,7 @@
-const express = require("express");
-const multer = require("multer");
-const app = express();
+const os = require("os");
+// console.log(os.arch());  //x64
+console.log(os.freemem()/1024*1024*1024) // free memory
+console.log(os.totalmem()) // total memory 
+console.log(os.platform()) //Window 32
 
-//middleware
-const upload = multer({
-  storage: multer.diskStorage({
-    destination: function (request, response, callback) {
-      callback(null, "uploads"); //callback(null, foldername)
-    },
-    filename: function (request, file, callback) {
-      callback(null, file.fieldname + "-" + Data.now() + ".jpg"); // callback(null,filename)
-    },
-  }),
-}).single("user_file"); // single("key_of_the_field")
-
-//url
-app.post("/upload", upload, (request, response) => {
-  response.send("file upload");
-});
-
-app.listen(5000);
+console.log(os.userInfo()) // homedirectory, username

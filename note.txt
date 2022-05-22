@@ -1,13 +1,7 @@
-Upload File in Node js
+OS Module in NOde js
 
-Install Multer npm package
-make router for upload file
-write code for upload file
+what is Os Module
+important function os OS Module
 
 Interview Question
 
-
-can we upload without multer ? 
-
-Yes , but we have to write more than multer
-and most of the people user multer
