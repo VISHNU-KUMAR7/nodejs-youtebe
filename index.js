@@ -11,7 +11,6 @@ app.get("/", (request, response) => {
   });
 });
 
-
 //middleware
 app.use(express.json());
 
@@ -24,6 +23,20 @@ app.post("/", (request, response) => {
       error ? console.log("error") : response.send(result);
     }
   );
+});
+
+app.put("/:id", (request, response) => {
+//   const data = ["user", "user", 1]; //static data
+const data = [request.body.name, request.body.password, request.params.id]
+  connection.query(
+    "UPDATE users SET name = ?, password = ? where id = ?  ",
+    data,
+    (error, result, fields) => {
+      error ? console.log(error) : response.send(result);
+    }
+  );
+
+  //   response.send("Put Done");
 });
 
 app.listen(5000);

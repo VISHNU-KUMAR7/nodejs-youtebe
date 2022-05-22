@@ -1,6 +1,7 @@
-Node js POST API with MySQL
+Node js PUT API with MySQL
 
-Make Route for API
-Insert Data in mysql
+make route for API
+get data from postman
+update data in mysql 
 
-Interview Question
+interview question  
