@@ -1,8 +1,6 @@
-Node Js GET API With MySQL
+Node js POST API with MySQL
 
-Make config file 
-
-Make route for API
-Get data from mysql 
+Make Route for API
+Insert Data in mysql
 
 Interview Question
