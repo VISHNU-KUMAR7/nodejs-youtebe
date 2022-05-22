@@ -1,8 +1,7 @@
-Post API with Mongoose
+            GET, DELETE and PUT API
+Example of GET method API
+Example of DELETE method API
+Example of PUT method API
 
-Make config file for MongoDB
-Make Post Route
-Get Data from the Postman and save in DB
+Interview Question
 
-
-Interview  Question
