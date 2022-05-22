@@ -1,9 +1,13 @@
-Search API in Node js with MongoDB
+Upload File in Node js
 
-Make Simple GET Route for API
-Search with Single Field
-Search with Multiple Filels
-Test API
-
+Install Multer npm package
+make router for upload file
+write code for upload file
 
 Interview Question
+
+
+can we upload without multer ? 
+
+Yes , but we have to write more than multer
+and most of the people user multer
