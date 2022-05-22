@@ -1,7 +1,6 @@
-Node js PUT API with MySQL
+Node js Delete API with mysql
 
 make route for API
 get data from postman
-update data in mysql 
-
-interview question  
+Delete data from mysql
+interview question

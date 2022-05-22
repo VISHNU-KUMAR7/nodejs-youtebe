@@ -26,8 +26,8 @@ app.post("/", (request, response) => {
 });
 
 app.put("/:id", (request, response) => {
-//   const data = ["user", "user", 1]; //static data
-const data = [request.body.name, request.body.password, request.params.id]
+  //   const data = ["user", "user", 1]; //static data
+  const data = [request.body.name, request.body.password, request.params.id];
   connection.query(
     "UPDATE users SET name = ?, password = ? where id = ?  ",
     data,
@@ -35,8 +35,19 @@ const data = [request.body.name, request.body.password, request.params.id]
       error ? console.log(error) : response.send(result);
     }
   );
-
   //   response.send("Put Done");
+});
+
+app.delete("/:id", (request, response) => {
+  const data = [request.params.id];
+  connection.query(
+    "DELETE FROM users Where id = ?",
+    data,
+    (error, result, fields) => {
+      error ? console.log("error") : console.log(result);
+    }
+  );
+  //   response.send(request.params.id);
 });
 
 app.listen(5000);

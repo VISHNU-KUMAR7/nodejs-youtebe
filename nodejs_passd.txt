@@ -1,0 +1,12 @@
+
+
+https://dry-fruit-com.herokuapp.com/
+
+username: vklucifer
+password: HFyL0BRGUcAYbwBJ
+
+mongodb+srv://<username>:<password>@dry-fruit-com.sp1pp.mongodb.net/dryfruitcom
+
+Thunder client
+
+if app.listen do before than Middleware and api 
