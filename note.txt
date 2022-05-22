@@ -1,7 +1,8 @@
-CRUD with Mongoose
-Continue Last commit code
-Update Record
-Delete Record
-Find and REad Result
+Post API with Mongoose
+
+Make config file for MongoDB
+Make Post Route
+Get Data from the Postman and save in DB
 
 
+Interview  Question
