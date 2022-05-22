@@ -1,7 +1,7 @@
-Events and Event Emitter in Node js
+        Node Js Connect With MySQL
 
-What is Events and Event Emitter
-Make an event and call it 
-
+Install MySQL npm package //npm i mysql
+connect node js and MySQL
+Get data from MySQL
 
 Interview Question
