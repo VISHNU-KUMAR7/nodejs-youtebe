@@ -1,7 +1,27 @@
-const os = require("os");
-// console.log(os.arch());  //x64
-console.log(os.freemem()/1024*1024*1024) // free memory
-console.log(os.totalmem()) // total memory 
-console.log(os.platform()) //Window 32
+const express = require("express");
+const EventEmitter = require("events");
+const { response } = require("express");
+const app = express();
+const event = new EventEmitter();
 
-console.log(os.userInfo()) // homedirectory, username
+let count = 0
+event.on("countAPI",()=>{
+    count++;
+    console.log("Event called"+count)
+})
+
+
+app.get("/", (request, response) => {
+  response.send("api call");
+  event.emit("countAPI")
+});
+
+app.get("/update", (request, response) => {
+  response.send("update api called");
+});
+
+app.get("/delete", (request, response) => {
+  response.send("Delete api called");
+});
+
+app.listen(5000);

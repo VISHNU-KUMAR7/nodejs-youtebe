@@ -1,7 +1,7 @@
-OS Module in NOde js
+Events and Event Emitter in Node js
 
-what is Os Module
-important function os OS Module
+What is Events and Event Emitter
+Make an event and call it 
+
 
 Interview Question
-
