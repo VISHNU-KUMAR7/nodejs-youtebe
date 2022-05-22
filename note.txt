@@ -1,12 +1,7 @@
-Start with Mongoose
-
-What is Mongoose
-Difference between Mongooose vs Mongodb package
-
-install Mongoose 
-
-what is schema
-what is model
+CRUD with Mongoose
+Continue Last commit code
+Update Record
+Delete Record
+Find and REad Result
 
 
-Interview Question
