@@ -1,23 +1,12 @@
-const mysql = require("mysql");
+const express = require("express");
+const app = express();
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "test",
+const connection = require("./config");
+
+app.get("/", (request, response) => {
+  connection.query("Select * from users", (error, result) => {
+    error ? console.log("error") : response.send(result);
+  });
 });
 
-// //check the connection
-// connection.connect((error) => {
-//   if (error) {
-//     console.log("error");
-//   } else {
-//     console.log("connected");
-//   }
-// });
-
-
-//fetch the data
-connection.query("select * from users", (error, result)=>{
-    console.log("result",result)
-})
+app.listen(5000);

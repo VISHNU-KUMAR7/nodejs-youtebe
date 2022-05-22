@@ -1,7 +1,8 @@
-        Node Js Connect With MySQL
+Node Js GET API With MySQL
 
-Install MySQL npm package //npm i mysql
-connect node js and MySQL
-Get data from MySQL
+Make config file 
+
+Make route for API
+Get data from mysql 
 
 Interview Question
